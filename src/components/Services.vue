@@ -2,23 +2,24 @@
   <v-row class="container">
     <v-row class="content">
       <v-row v-scrollanimation>
-        <v-col >
+        <v-col>
           <h1 class="titre-page">Nos Services</h1>
           <span class="ligne-h"></span>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation class="page-slogan">
+      <v-row v-scrollanimation>
         <v-col cols="4">
           <h2 class="titre-slogan">Ma descrition de nos services</h2>
         </v-col>
         <v-col>
-          <p v-scrollanimation class="text-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aspernatur dicta
+          <p v-scrollanimation class="text-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+            amet aspernatur dicta
             eaque et fugiat
             fugit
             nam, officia officiis ratione reiciendis repudiandae sunt tempore vel voluptates. Beatae optio quod sit!</p>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation  class="page-slogan">
+      <v-row v-scrollanimation class="service">
         <v-col class="img-services">
           <img src="../assets/service1.webp" alt=""/>
         </v-col>
@@ -34,11 +35,12 @@
               <li>Ouverture de tranché, pour la pose de réseaux (eau, électricité, téléphone, etc), pour des
                 fondations de muret/clôture par exemple
               </li>
+              <li>Ouverture de zone pour bassin d’agrément</li>
             </ul>
           </div>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation class="page-slogan">
+      <v-row v-scrollanimation class="service">
         <v-col class="text-services">
           <h2 class="titre-services">Aménagement extérieur</h2>
           <div>
@@ -57,7 +59,7 @@
           <img src="../assets/service2.webp" alt=""/>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation class="page-slogan">
+      <v-row v-scrollanimation class="service">
         <v-col class="img-services">
           <img src="../assets/service3.webp" alt=""/>
         </v-col>
@@ -87,17 +89,26 @@ export default {
 </script>
 
 <style scoped>
+.service {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto !important;
+}
 
 .img-services {
-  margin: 2em !important;
   display: flex;
-  height:  100%;
+  justify-content: center;
+  padding: 2em !important;
+  height: 100%;
 }
 
 .img-services img {
   max-width: 600px;
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
   object-fit: fill;
   border-radius: 5px;
 }
@@ -105,13 +116,11 @@ export default {
 .text-services {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin: 2em !important;
-  min-width: 280px;
+
+  padding: 2em !important;
+  min-width: 300px;
   height: 100%;
   min-height: 300px;
-  transform: translateY(25%);
-
 }
 
 .titre-services {
@@ -122,9 +131,40 @@ export default {
   line-height: 32px;
   color: #F07426;
 }
+
+@media screen and (max-width: 1300px) {
+  .service {
+    flex-direction: column;
+  }
+
+  .img-services {
+    order: 1;
+  }
+
+  .text-services {
+    justify-content: center;
+    margin: auto !important;
+    order: 2;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .img-services img {
     min-width: 300px;
+
+  }
+
+  .text-services {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  @media (orientation: landscape) {
+
+    .text-slogan {
+      min-width: 500px;
+    }
   }
 }
 </style>

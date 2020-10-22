@@ -15,11 +15,14 @@
           <h2 class="title-card">ABTP mp, une société à votre service.</h2>
           <p>Dès sa création en 2004, notre société à été orienté vers le secteur du TP, dans la région Toulousaine.
             Nous avons fait nos preuves dans les grand chantiers, tel que l'élargissement de l’aéroport pour l'arrivé de
-            l'A380. Notre participation à la réfection de la place du Busca (centre ville Toulousain). Ou encore le
-            grand chantier du nouveau Parc des Expositions (MEETT). </p>
-          <p>Aujourd'hui, après tant d’années passé dans l'agitation des villes, nous aspirons à un peu plus de nature,
-            de calme, et revenir à nos racines. Fort de nos expériences, nous vous proposons nos services en matières
-            d’aménagement et d'entretiens d'espace vert. Pour que votre espace nature soit celui que vous attendez.</p>
+            l'A380, notre participation à la réfection de la place du Busca (centre ville Toulousain). Ou plus
+            récemment, le grand chantier du nouveau Parc des Expositions (MEETT). </p>
+          <p>Aujourd'hui, après plusieurs années passé dans l'agitation des villes, nous aspirons à un peu plus de
+            nature, et
+            revenir à nos racines. </p>
+          <p>Notre métie? L’aménagement extérieur: pour un mieux vivre.
+            Fort de nos expériences, nous vous proposons nos services en matières d’aménagement et d'entretiens d'espace
+            vert. Pour que votre espace nature soit celui que vous attendez.</p>
         </v-col>
       </v-row>
     </v-row>
@@ -55,9 +58,11 @@ export default {
   box-shadow: 0 .2em 1.2em;
   border-radius: 5px;
 }
-.title-card{
+
+.title-card {
   color: #F07426;
 }
+
 .text-card {
   padding: 5rem !important;
 }
@@ -80,6 +85,10 @@ p {
   .card {
     box-shadow: none;
     width: 100%;
+  }
+
+  .text-card {
+    padding: 2rem !important;
   }
 }
 </style>

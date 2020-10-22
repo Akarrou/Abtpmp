@@ -7,20 +7,27 @@
           <span class="ligne-h"></span>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation class="page-slogan">
+      <v-row v-scrollanimation>
         <v-col cols="4">
-          <h2 class="titre-slogan">Mon titre</h2>
+
         </v-col>
         <v-col>
-          <p class="text-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aspernatur dicta
-            eaque et fugiat
-            fugit
-            nam, officia officiis ratione reiciendis repudiandae sunt tempore vel voluptates. Beatae optio quod sit!</p>
+          <p class="text-slogan">Nous sommes à votre écoute pour définir ensemble, votre projet d’aménagement
+            de jardin et d’espace extérieur. DEVIS GRATUIT</p>
         </v-col>
       </v-row>
       <v-row class="section" v-scrollanimation>
         <v-col class="img">
-          <img src="../assets/arbre.svg" alt=""/>
+          <l-map style="height: 350px" :zoom="zoom" :center="center">
+            <l-tile-layer :url="url"></l-tile-layer>
+            <l-marker :lat-lng="markerLatLng" :icon="icon" >
+           </l-marker>
+            <l-circle
+                :lat-lng="circle.center"
+                :radius="circle.radius"
+                :color="circle.color"
+            />
+          </l-map>
         </v-col>
         <v-col class="info">
           <v-row class="info-contact">
@@ -31,14 +38,57 @@
             <img src="../assets/e-mail.png" alt=""/>
             <a href="mailto:nullepart@mozilla.org">monmail@gmail.com</a>
           </v-row>
+          <v-row class="info-contact">
+            <p>Mardi – Mercredi – Jeudi – Vendredi - Samedi</p>
+          </v-row>
+          <v-row class="info-contact">
+            <ul>
+              <li>De 8h30 à 12h00</li>
+              <li>De 14h00 à 18h30</li>
+            </ul>
+          </v-row>
         </v-col>
       </v-row>
     </v-row>
   </v-row>
 </template>
 <script>
+import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import {LMap, LTileLayer, LCircle,LMarker} from 'vue2-leaflet';
 export default {
-  name: "Contact"
+  name: "Contact",
+  components: {
+    LMap,
+    LTileLayer,
+    LCircle,
+    LMarker,
+  },
+  data:() =>({
+    url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    zoom: 9,
+    center: [43.808729, 1.186782],
+    markerLatLng:[43.808729, 1.186782],
+    circle: {
+      center: [43.808729, 1.186782],
+      radius: 28000,
+      color: 'red'
+    },
+    icon: L.icon({
+      iconUrl: require('../assets/Lmap.webp'),
+      iconSize: [22, 32],
+      iconAnchor: [16, 37]
+    }),
+
+}),
+  computed: {
+    dynamicSize () {
+      return [this.iconSize, this.iconSize * 1.15];
+    },
+    dynamicAnchor () {
+      return [this.iconSize / 2, this.iconSize * 1.15];
+    }
+  }
 }
 </script>
 
@@ -99,22 +149,41 @@ a:hover {
 .img img {
   width: 100%;
 }
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1090px) {
   .info-contact p, a {
     min-width: 0;
+  }
+
+  .img {
+    order: 2;
+  }
+}
+
+@media (orientation: landscape) {
+  @media screen and (max-width: 800px) {
+    .img {
+      order: 2;
+    }
   }
 }
 
 @media screen and (max-width: 400px) {
-  .info{
+  .info {
     min-width: 300px;
   }
+
   .info-contact {
     flex-direction: column;
     align-items: center;
   }
+
   .info-contact p, a {
     text-align: center;
+  }
+
+  .img {
+    order: 2;
   }
 }
 </style>

@@ -46,7 +46,7 @@ export default {
   src: url('./assets/Amiri-Regular.ttf');
 }
 
-*, html, body {
+*, html, body ::before, ::after  {
   margin: 0 !important;
   padding: 0 !important;
   box-sizing: border-box;
@@ -82,7 +82,7 @@ p, li {
   max-width: 70vw !important;
   transform-style: preserve-3d;
   margin: auto !important;
-  padding: 2rem 0;
+  padding: 2rem!important;;
 }
 
 ul {
@@ -100,11 +100,9 @@ ul {
 }
 
 .text-slogan {
-  display: flex;
-  margin: 1em !important;
   padding: 1em !important;
-  transform: translateY(25%);
   min-width: 680px;
+  height: auto;
 }
 
 
@@ -128,10 +126,17 @@ ul {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
-
+@media screen and (max-width: 900px) {
+  .content {
+    max-width: 100vw !important;
+    padding:  0 1em!important;
+  }
+}
 @media screen and (max-width: 700px) {
   .text-slogan {
-    min-width: 280px;
+    min-width: 380px;
+    height: auto;
+    margin: 0 !important;
   }
 
   .titre-page {
@@ -142,7 +147,11 @@ ul {
     min-width: 280px;
   }
 }
-
+@media screen and (max-width: 400px) {
+  .text-slogan {
+    min-width: 280px;
+  }
+}
 /*Scroll animation*/
 .before-enter {
   opacity: 0;

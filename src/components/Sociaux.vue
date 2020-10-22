@@ -1,10 +1,10 @@
 <template>
   <v-col class="icon-bar">
-    <v-btn icon>
+    <v-btn icon href="https://www.facebook.com/ABTPmp/?notif_id=1603224221248463&notif_t=page_user_activity">
       <v-icon size="36px">{{ iconFa }}</v-icon>
     </v-btn>
-    <v-btn icon>
-      <v-icon size="36px">{{ iconIn }}</v-icon>
+    <v-btn icon href="https://www.instagram.com/abtpmp/?hl=fr">
+      <v-icon size="36px">{{ iconIn }} </v-icon>
     </v-btn>
   </v-col>
 </template>
@@ -36,6 +36,7 @@ export default {
   background-color: #31aa79;
   border-radius: 5px 0 0 5px;
   padding: 1rem .5rem !important;
+  box-shadow: 0 5px 10px #403f3f;
 }
 
 .v-btn {
@@ -44,5 +45,11 @@ export default {
 
 .v-btn > .v-btn__content .v-icon {
   color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .icon-bar {
+    display: none;
+  }
 }
 </style>

@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
 import Vuetify from 'vuetify/lib'
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 Vue.use(Vuetify)
 import ScrollAnimation from './directives/scrollanimation';
 Vue.directive('scrollanimation', ScrollAnimation);

@@ -19,40 +19,36 @@
               <div class="activity-text">
                 <span class="ligne-v"></span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci consequatur consequuntur
-                  dignissimos enim facilis ipsa maiores perferendis soluta veniam? Eum neque odit velit voluptates.
-                  Molestiae necessitatibus numquam reprehenderit soluta?
+                  Nous créons les pentes nécessaire à l‘écoulement des eaux de pluie. Les tranchés dites de réseaux,
+                  pour les gaines de câbles, les tuyaux, etc... Les fondations de petit muret, et de clôtures. Si vous
+                  le souhaitez, nous créons aussi les bassins d’agréments. En forme libre ou en prêt à poser.
                 </p>
               </div>
-
             </div>
           </v-col>
           <v-col v-scrollanimation class="dec2">
             <div>
-              <h2>Aménagement</h2>
+              <h2>Aménagement extérieur</h2>
             </div>
             <div>
               <div class="activity-text">
                 <span class="ligne-v"></span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci consequatur consequuntur
-                  dignissimos enim facilis ipsa maiores perferendis soluta veniam? Eum neque odit velit voluptates.
-                  Molestiae necessitatibus numquam reprehenderit soluta?
+                  Pour la création d’une allée, d’une entrée, d’une cour, d’un muret. La mise en place de clôture.
                 </p>
               </div>
             </div>
           </v-col>
           <v-col v-scrollanimation class="dec3">
             <div>
-              <h2>Jardin</h2>
+              <h2>Entretiens de jardin</h2>
             </div>
             <div>
               <div class="activity-text">
                 <span class="ligne-v"></span>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci consequatur consequuntur
-                  dignissimos enim facilis ipsa maiores perferendis soluta veniam? Eum neque odit velit voluptates.
-                  Molestiae necessitatibus numquam reprehenderit soluta?
+                  Pour que votre jardin, devienne un espace supplémentaire de vie et de détente. Qu’il reste accueillant
+                  tout au long de l’année, sans effort.
                 </p>
               </div>
             </div>
@@ -64,7 +60,7 @@
            class="mt-16 mb-16 headband d-flex flex-wrap flex-column justify-center align-center ma-auto">
       <h2 class="article-title align-content-center ma-auto text--darken-1">Un texte à très accrocheur</h2>
       <v-btn class="btn-header ma-3 " S Rounded outlined x-large dark
-             v-scroll-to="{ el: '#Contact', offset: -200 , easing: 'linear'}">CONTACTEZ-MOI
+             v-scroll-to="{ el: '#Contact', offset: -200 , easing: 'linear'}">CONTACTEZ-NOUS
       </v-btn>
     </v-row>
   </v-col>
@@ -172,13 +168,29 @@ h2 {
   .slogan {
     top: 150px;
     text-align: center;
+    font-size: 1.5em;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .slogan {
-    top: 200px;
-    font-size: 1.5rem;
+    top: 5px;
+    text-align: center;
+    font-size: 1em;
+  }
+}
+
+@media (orientation: landscape) {
+  @media screen and (max-width: 800px) {
+    .header {
+      padding-top: 60px !important;
+    }
+
+    .slogan {
+      top: 20px;
+      text-align: center;
+      font-size: 1.3em;
+    }
   }
 }
 </style>
