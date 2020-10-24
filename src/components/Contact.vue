@@ -8,9 +8,6 @@
         </v-col>
       </v-row>
       <v-row v-scrollanimation>
-        <v-col cols="4">
-
-        </v-col>
         <v-col>
           <p class="text-slogan">Nous sommes à votre écoute pour définir ensemble, votre projet d’aménagement
             de jardin et d’espace extérieur. DEVIS GRATUIT</p>
@@ -20,8 +17,8 @@
         <v-col class="img">
           <l-map style="height: 350px" :zoom="zoom" :center="center">
             <l-tile-layer :url="url"></l-tile-layer>
-            <l-marker :lat-lng="markerLatLng" :icon="icon" >
-           </l-marker>
+            <l-marker :lat-lng="markerLatLng" :icon="icon">
+            </l-marker>
             <l-circle
                 :lat-lng="circle.center"
                 :radius="circle.radius"
@@ -32,11 +29,11 @@
         <v-col class="info">
           <v-row class="info-contact">
             <img src="../assets/phone.png" alt=""/>
-            <p>06 00 00 00 00</p>
+            <p>06.73.33.54.46</p>
           </v-row>
           <v-row class="info-contact">
             <img src="../assets/e-mail.png" alt=""/>
-            <a href="mailto:nullepart@mozilla.org">monmail@gmail.com</a>
+            <a href="mailto:sebastienbelloc@abtpmp.fr">sebastienbelloc@abtpmp.fr</a>
           </v-row>
           <v-row class="info-contact">
             <p>Mardi – Mercredi – Jeudi – Vendredi - Samedi</p>
@@ -55,7 +52,8 @@
 <script>
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import {LMap, LTileLayer, LCircle,LMarker} from 'vue2-leaflet';
+import {LCircle, LMap, LMarker, LTileLayer} from 'vue2-leaflet';
+
 export default {
   name: "Contact",
   components: {
@@ -64,11 +62,11 @@ export default {
     LCircle,
     LMarker,
   },
-  data:() =>({
+  data: () => ({
     url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
     zoom: 9,
     center: [43.808729, 1.186782],
-    markerLatLng:[43.808729, 1.186782],
+    markerLatLng: [43.808729, 1.186782],
     circle: {
       center: [43.808729, 1.186782],
       radius: 28000,
@@ -80,12 +78,12 @@ export default {
       iconAnchor: [16, 37]
     }),
 
-}),
+  }),
   computed: {
-    dynamicSize () {
+    dynamicSize() {
       return [this.iconSize, this.iconSize * 1.15];
     },
-    dynamicAnchor () {
+    dynamicAnchor() {
       return [this.iconSize / 2, this.iconSize * 1.15];
     }
   }
@@ -105,10 +103,8 @@ export default {
 
 .info-contact {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin: auto !important;
 }
 
 .info {
@@ -126,7 +122,17 @@ export default {
 .info-contact p, a {
   min-width: 300px;
   font-size: 1.5rem;
-  margin: auto 0 !important;
+  margin: 1.5rem auto !important;
+  padding: 0 1rem !important;
+}
+
+ul {
+  margin-bottom: 1.5rem !important;
+}
+
+ul, li {
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .info-contact img {

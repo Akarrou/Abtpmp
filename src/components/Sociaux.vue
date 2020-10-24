@@ -33,7 +33,7 @@ export default {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  background-color: #31aa79;
+  background-color: #F07426;
   border-radius: 5px 0 0 5px;
   padding: 1rem .5rem !important;
   box-shadow: 0 5px 10px #403f3f;
@@ -47,7 +47,7 @@ export default {
   color: white;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .icon-bar {
     display: none;
   }

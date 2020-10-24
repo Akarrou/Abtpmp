@@ -31,7 +31,7 @@
             </p>
             <ul>
               <li>La mise à nivaux des terrains</li>
-              <li>Déplacement de terre, évacuation de gravats</li>
+              <li>Déplacement de terre, <strong>évacuation de gravats</strong></li>
               <li>Ouverture de tranché, pour la pose de réseaux (eau, électricité, téléphone, etc), pour des
                 fondations de muret/clôture par exemple
               </li>
@@ -49,7 +49,7 @@
             </p>
             <ul>
               <li>L'aménagement d'allée, de parking</li>
-              <li>La livraison de graviers, cailloux et autres matériaux</li>
+              <li><strong>La livraison de graviers</strong>, cailloux et autres matériaux</li>
               <li>La création de zone en herbé. La pose, le semis de gazon</li>
               <li>La plantation d'arbre, arbuste, et de haie.</li>
             </ul>
@@ -73,7 +73,7 @@
               <li>La tonte, le désherbage, la taille de haie, le débroussaillage</li>
               <li>Abatage d'arbre et arbuste</li>
               <li>Décompactage des sols (motoculture pour potager)</li>
-              <li>Ramassage de feuilles, évacuation des déchets vert</li>
+              <li>Ramassage de feuilles, <strong>évacuation des déchets vert</strong></li>
             </ul>
           </div>
         </v-col>
@@ -161,7 +161,6 @@ export default {
 
 @media screen and (max-width: 670px) {
   @media (orientation: landscape) {
-
     .text-slogan {
       min-width: 500px;
     }

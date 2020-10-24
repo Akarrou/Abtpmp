@@ -1,15 +1,21 @@
 <template>
   <footer>
     <v-row class="footer-foncer">
-      <p>COPYRIGHT 2020 - ABTPMP</p>
+      <p>2020 - ABTPMP</p>
+      <LegalNotice/>
     </v-row>
   </footer>
 </template>
 
 <script>
 import '@mdi/font/css/materialdesignicons.css'
+import LegalNotice from "@/components/LegalNotice";
+
 export default {
   name: "Footer",
+  components: {
+    LegalNotice,
+  },
   data: () => ({
     iconFa: 'mdi-facebook',
     iconIn: 'mdi-instagram',
@@ -27,10 +33,10 @@ footer {
   justify-content: center;
   background: #53AA77;
   width: 100vw;
-
   padding: 1em !important;
 }
-p{
+
+p {
   color: white !important;
 }
 </style>

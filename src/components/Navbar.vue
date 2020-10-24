@@ -17,7 +17,8 @@
               <v-btn class="btn-nav" v-scroll-to="{ el: '#Home', offset: -200 , easing: 'linear'}">ACCEUIL</v-btn>
             </li>
             <li>
-              <v-btn class="btn-nav" v-scroll-to="{ el: '#services', offset: -200 , easing: 'linear'}">NOS SERVICES</v-btn>
+              <v-btn class="btn-nav" v-scroll-to="{ el: '#services', offset: -200 , easing: 'linear'}">NOS SERVICES
+              </v-btn>
             </li>
             <li>
               <v-btn class="btn-nav" v-scroll-to="{ el: '#AboutUS', offset: -100 , easing: 'linear'}">A PROPOS</v-btn>
@@ -36,7 +37,6 @@
           </v-btn>
         </v-row>
       </nav>
-
     </div>
     <v-navigation-drawer scroll="no" id="drawer" v-model="drawer" absolute temporary>
       <v-card id="drawer-card" class="" tile>
@@ -83,6 +83,7 @@ export default {
   name: "Navbar",
   data: () => ({
     icon: 'mdi-menu',
+    iconClose: 'mdi-close',
     drawer: false,
     iconFa: 'mdi-facebook',
     iconIn: 'mdi-instagram',
@@ -104,7 +105,6 @@ li {
   list-style-type: none;
   color: white !important;
   font-family: "ARJULIAN", sans-serif;
-
 }
 
 .v-btn.v-size--default {
@@ -126,11 +126,12 @@ nav {
   box-shadow: 0 5px 10px #403f3f;
 }
 
-.logo-nav, .logo-nav img{
+.logo-nav, .logo-nav img {
   height: 55px;
   padding: 3px !important;
   display: none;
 }
+
 #burger {
   display: none;
   height: 36px;
@@ -166,7 +167,7 @@ nav {
 #drawer {
   position: fixed;
   padding-top: 1rem !important;
-  margin-top: 195px !important;
+  margin-top: 190px !important;
   background: #53AA77;
 }
 
@@ -176,13 +177,11 @@ nav {
   background-color: #53AA77 !important;
   color: white !important;
   width: 100%;
-
 }
 
 .icon-bar {
   display: none;
 }
-
 
 .v-btn > .v-btn__content .v-icon {
   color: white;
@@ -210,20 +209,19 @@ nav {
   }
 }
 
-
-  @media (orientation: landscape) {
-    @media screen and (max-width: 800px) {
+@media (orientation: landscape) {
+  @media screen and (max-width: 800px) {
     .logo {
       display: none !important;
     }
-    .logo-nav, .logo-nav img{
+
+    .logo-nav, .logo-nav img {
       display: initial;
     }
-      #drawer {
-        margin-top: 60px !important;
 
-      }
+    #drawer {
+      margin-top: 60px !important;
+    }
   }
-
 }
 </style>
