@@ -30,8 +30,6 @@ export default {
     Footer,
     Sociaux
   },
-
-
 }
 </script>
 
@@ -104,7 +102,6 @@ ul {
   min-width: 680px;
   height: auto;
 }
-
 
 .titre-page {
   color: #31aa79;
