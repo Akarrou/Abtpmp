@@ -4,14 +4,14 @@
     <v-dialog v-model="dialog" persistent max-width="500">
       <v-card class="dialog" elevation="14">
         <v-card-title>
-          <h2 class="titre-page">Mentions Légales</h2>
+          <h4 class="titre-page">Mentions Légales</h4>
         </v-card-title>
         <v-card-text>
           <ul>
             <li>Dirigeant: Monsieur Sebastien Belloc</li>
-            <li>Adresse:</li>
-            <li>N° de SIRET:</li>
-            <li>Activité : Conseil et communication – Développement de site internet (7021Z)</li>
+            <li>Adresse:Lieu dit Goudonne 82600 Aucamville</li>
+            <li>N° de SIRET: 491 348 561 00029</li>
+            <li>Activité : Service d’aménagement paysager (NAF 8130Z)</li>
             <li>Téléphone: 06.73.33.54.46</li>
             <li>Adresse mail: sebastienbelloc@abtpmp.fr</li>
           </ul>

@@ -3,7 +3,7 @@
     <v-row class="content">
       <v-row v-scrollanimation>
         <v-col>
-          <h1 class="titre-page">Contactez-nous</h1>
+          <h2 class="titre-page">Contactez-nous</h2>
           <span class="ligne-h"></span>
         </v-col>
       </v-row>
@@ -68,8 +68,8 @@ export default {
     center: [43.808729, 1.186782],
     markerLatLng: [43.808729, 1.186782],
     circle: {
-      center: [43.808729, 1.186782],
-      radius: 28000,
+      center: [43.808729, 1.286782],
+      radius: 22000,
       color: 'red'
     },
     icon: L.icon({

@@ -5,7 +5,7 @@
         <img src="../assets/jardin.webp" alt="">
       </div>
       <div class="slogan">
-        <h1>Votre Espace Nature</h1>
+        <h1>Entretiens de Votre Espace Nature</h1>
       </div>
     </v-row>
     <v-row class="container">
@@ -19,7 +19,7 @@
               <div class="activity-text">
                 <span class="ligne-v"></span>
                 <p>
-                  Nous créons les pentes nécessaire à l‘écoulement des eaux de pluie. Les tranchés dites de réseaux,
+                  Nous créons les pentes nécessaire à l‘écoulement des eaux de pluie. Les tranchées dites de réseaux,
                   pour les gaines de câbles, les tuyaux, etc... Les fondations de petit muret, et de clôtures. Si vous
                   le souhaitez, nous créons aussi les bassins d’agréments. En forme libre ou en prêt à poser.
                 </p>
@@ -56,9 +56,9 @@
         </v-row>
       </v-row>
     </v-row>
-    <v-row v-scrollanimation
-           class="mt-16 mb-16 headband d-flex flex-wrap flex-column justify-center align-center ma-auto">
-      <h2 class="article-title align-content-center ma-auto text--darken-1">Un texte à très accrocheur</h2>
+    <v-row alt="Jardin emménager avec des arbustes verts" v-scrollanimation
+           class="headband">
+      <h2 class="article-title align-content-center ma-auto text--darken-1">Aménagez votre extérieur avec un professionnel</h2>
       <v-btn class="btn-header ma-3 " S Rounded outlined x-large dark
              v-scroll-to="{ el: '#Contact', offset: -200 , easing: 'linear'}">CONTACTEZ-NOUS
       </v-btn>
@@ -105,6 +105,7 @@ export default {
   margin: 3em !important;;
   font-size: 32px;
   color: #fd6e36;
+  text-shadow: 1px 1px 3px #000000;
 }
 
 h2 {
@@ -176,6 +177,13 @@ h2 {
     top: 5px;
     text-align: center;
     font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .slogan {
+    top: 150px;
+
   }
 }
 

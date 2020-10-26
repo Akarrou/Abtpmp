@@ -3,34 +3,32 @@
     <v-row class="content">
       <v-row v-scrollanimation>
         <v-col>
-          <h1 class="titre-page">Nos Services</h1>
+          <h2 class="titre-page">Nos Services</h2>
           <span class="ligne-h"></span>
         </v-col>
       </v-row>
-      <v-row v-scrollanimation>
+      <v-row v-scrollanimation class="slogan-page">
         <v-col cols="4">
-          <h2 class="titre-slogan">Ma descrition de nos services</h2>
+          <h3 class="titre-slogan">Des services adaptés à vos besoins</h3>
         </v-col>
-        <v-col>
-          <p v-scrollanimation class="text-slogan">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
-            amet aspernatur dicta
-            eaque et fugiat
-            fugit
-            nam, officia officiis ratione reiciendis repudiandae sunt tempore vel voluptates. Beatae optio quod sit!</p>
+        <v-col >
+          <p v-scrollanimation class="text-slogan">Situé à Aucamville dans le Tarn et Garonne , nous réalisons tous vos
+            travaux de terrassement, d’aménagement et d’entretien extérieur dans la région nord Toulousaine. De Montauban en passant par Montech, Verdun sur Garonne,
+            Grisolles, Grenade, Seilh, jusqu’aux portes de Toulouse.</p>
         </v-col>
       </v-row>
       <v-row v-scrollanimation class="service">
         <v-col class="img-services">
-          <img src="../assets/service1.webp" alt=""/>
+          <img src="../assets/réseaux.webp" alt="Pelle mécanique qui réalise une tranchée, pour la pose de réseau"/>
         </v-col>
         <v-col class="text-services">
-          <h2 class="titre-services">Terrassement & réseaux</h2>
+          <h3 class="titre-services">Terrassement & réseaux</h3>
           <div>
             <p>
               Pour tout vos travaux de gros œuvres, nous vous proposons:
             </p>
             <ul>
-              <li>La mise à nivaux des terrains</li>
+              <li>La mise à nivau des terrains</li>
               <li>Déplacement de terre, <strong>évacuation de gravats</strong></li>
               <li>Ouverture de tranché, pour la pose de réseaux (eau, électricité, téléphone, etc), pour des
                 fondations de muret/clôture par exemple
@@ -42,7 +40,7 @@
       </v-row>
       <v-row v-scrollanimation class="service">
         <v-col class="text-services">
-          <h2 class="titre-services">Aménagement extérieur</h2>
+          <h3 class="titre-services">Aménagement extérieur</h3>
           <div>
             <p>
               Pour les travaux de finition, nous vous proposons:
@@ -50,28 +48,28 @@
             <ul>
               <li>L'aménagement d'allée, de parking</li>
               <li><strong>La livraison de graviers</strong>, cailloux et autres matériaux</li>
-              <li>La création de zone en herbé. La pose, le semis de gazon</li>
+              <li>La création de zone enherbée. La pose, le semis de gazon</li>
               <li>La plantation d'arbre, arbuste, et de haie.</li>
             </ul>
           </div>
         </v-col>
         <v-col class="img-services">
-          <img src="../assets/service2.webp" alt=""/>
+          <img src="../assets/terrassement.webp" alt="Mini pelle qui réalise le terrassement d'un jardin"/>
         </v-col>
       </v-row>
       <v-row v-scrollanimation class="service">
         <v-col class="img-services">
-          <img src="../assets/service3.webp" alt=""/>
+          <img src="../assets/entretiens.webp" alt="Jardin avec une pelouse tondue et arbustes bien entretenu"/>
         </v-col>
         <v-col class="text-services">
-          <h2 class="titre-services">Entretiens de jardin</h2>
+          <h3 class="titre-services">Entretiens de jardin</h3>
           <div>
             <p>
-              Pour l'entretiens de votre espace vert, nous intervenons pour:
+              Pour l'entretien de votre espace vert, nous intervenons pour:
             </p>
             <ul>
               <li>La tonte, le désherbage, la taille de haie, le débroussaillage</li>
-              <li>Abatage d'arbre et arbuste</li>
+              <li>Abattage d'arbre et arbuste</li>
               <li>Décompactage des sols (motoculture pour potager)</li>
               <li>Ramassage de feuilles, <strong>évacuation des déchets vert</strong></li>
             </ul>
@@ -97,7 +95,10 @@ export default {
   align-items: center;
   margin: auto !important;
 }
-
+.slogan-page{
+  align-items: center;
+  margin: auto !important;
+}
 .img-services {
   display: flex;
   justify-content: center;

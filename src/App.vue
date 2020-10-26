@@ -90,7 +90,7 @@ ul {
 
 .titre-slogan {
   color: #F07426;
-  margin: 1em !important;
+  padding: 1em !important;
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
