@@ -19,6 +19,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Sociaux from "@/components/Sociaux";
 
+
 export default {
   name: 'App',
   components: {
@@ -28,7 +29,7 @@ export default {
     AboutUs,
     Contact,
     Footer,
-    Sociaux
+    Sociaux,
   },
 }
 </script>

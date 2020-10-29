@@ -8,6 +8,7 @@
         <h1>Entretiens de Votre Espace Nature</h1>
       </div>
     </v-row>
+    <InfosCard></InfosCard>
     <v-row class="container">
       <v-row class="content">
         <v-row class="activity">
@@ -67,8 +68,12 @@
 </template>
 
 <script>
+import InfosCard from "@/components/InfosCard";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {
+    InfosCard
+  },
 }
 </script>
 
@@ -147,7 +152,7 @@ h2 {
   font-style: normal;
   font-weight: bold;
   font-size: 2em;
-  background-image: url("../assets/paysage1.png");
+  background-image: url("../assets/paysage1.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
