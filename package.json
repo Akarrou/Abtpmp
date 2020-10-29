@@ -11,6 +11,7 @@
     "core-js": "^3.6.5",
     "leaflet": "^1.7.1",
     "vue": "^2.6.11",
+    "vue-analytics": "^5.22.1",
     "vue-router": "^3.4.7",
     "vue-scrollto": "^2.19.1",
     "vue2-leaflet": "^2.6.0",
@@ -23,8 +24,12 @@
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^6.0.3",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "generate-robotstxt": "^8.0.3",
+    "robotstxt-webpack-plugin": "^7.0.0",
+    "sitemap-webpack-plugin": "^0.8.1",
     "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
