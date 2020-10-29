@@ -9,7 +9,7 @@
       </v-row>
       <v-row v-scrollanimation class="card">
         <v-col class="card-img">
-          <img src="../assets/paysage1.png" alt="Jardin aménagé avec des arbustes"/>
+          <img src="../assets/paysage1.webp" alt="Jardin aménagé avec des arbustes"/>
         </v-col>
         <v-col class="text-card">
           <h3 class="title-card">ABTP mp, une société à votre service.</h3>

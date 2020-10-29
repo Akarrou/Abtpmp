@@ -1,30 +1,30 @@
 const SitemapPlugin = require('sitemap-webpack-plugin').default;
 const paths = [
-  {
-    path: '/',
-    lastmod: new Date().toISOString().slice(0,10),
-    priority: '0.8',
-    changefreq: 'hourly'
-  },
+    {
+        path: '/',
+        lastmod: new Date().toISOString().slice(0, 10),
+        priority: '0.8',
+        changefreq: 'hourly'
+    },
 ];
 const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
-const productionGzipExtensions = ['js', 'css','svg']
+const productionGzipExtensions = ['js', 'css', 'svg']
 module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  publicPath: process.env.NODE_ENV === 'production'? './': '/',
+  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
   devServer: {
     compress: true,
     disableHostCheck: true,
   },
   configureWebpack: {
     plugins: [
-      new SitemapPlugin('https://abtpmb.fr', paths, {
+      new SitemapPlugin('https://abtpmp.fr', paths, {
         filename: 'sitemap.xml',
         lastmod: true,
-        changefreq: 'hourly',
+        changefreq: 'weekly',
         priority: '0.8'
       }),
       new RobotstxtPlugin({
@@ -49,8 +49,8 @@ module.exports = {
             cleanParam: "ref /articles/",
           },
         ],
-        sitemap: "https://abtpmb.fr/sitemap.xml",
-        host: "https://abtpmb.fr",
+        sitemap: "https://abtpmp.fr/sitemap.xml",
+        host: "https://abtpmp.fr",
       }),
       new CompressionWebpackPlugin({
         filename: '[path].gz[query]',
@@ -60,5 +60,22 @@ module.exports = {
         minRatio: 0.8
       })
     ]
-  }
+  },
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

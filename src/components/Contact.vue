@@ -28,11 +28,11 @@
         </v-col>
         <v-col class="info">
           <v-row class="info-contact">
-            <img src="../assets/phone.png" alt=""/>
+            <img src="../assets/phone.webp" alt=""/>
             <p>06.73.33.54.46</p>
           </v-row>
           <v-row class="info-contact">
-            <img src="../assets/e-mail.png" alt=""/>
+            <img src="../assets/e-mail.webp" alt=""/>
             <a href="mailto:sebastienbelloc@abtpmp.fr">sebastienbelloc@abtpmp.fr</a>
           </v-row>
           <v-row class="info-contact">
